@@ -12,6 +12,9 @@ const App = () => {
       <Header />
       <LightBulb />
       <br />
+
+      <Box />
+      <br />
       <Box />
       <Footer />
     </>
