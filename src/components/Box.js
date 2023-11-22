@@ -2,19 +2,19 @@ import React, {useState} from "react"
 
 const Box = () => {
     const [count, setCount] = useState(0)
-    const [color, setColor] = useState(["green", "blue"])
+    const [color, setColor] = useState("purple")
 
-    const changeCount = () => {
+    const changeColor = () => {
+        const newColor = "rgb(" + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255)  + "," + Math.floor(Math.random()*255) + ")"
+        setColor(newColor)
         setCount(count + 1)
-    }
-    
-    const changeColor = (index) => {
-        setColor(color + index)
     }
 
   return (
     <>
-      <div className="box" onClick={changeColor} style={{ backgroundColor: color }}>
+      <div className="box" 
+        onClick={() => changeColor(color)} 
+        style={{ backgroundColor: color }}>
         {count}
       </div>
     </>
