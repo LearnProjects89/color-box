@@ -14,8 +14,7 @@ const App = () => {
   }
 
   const deleteBoxMinus = () => {
-    setBoxMinus([boxMinus] - 1 )
-    console.log(boxMinus);
+    setBoxMinus( boxPlus.pop() )
   }
 
   return (
