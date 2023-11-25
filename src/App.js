@@ -6,20 +6,30 @@ import LightBulb from "./components/LightBulb";
 import Box from "./components/Box";
 
 const App = () => {
-  const [box, setBox] = useState()
+  const [boxPlus, setBoxPlus] = useState([])
+  const [boxMinus, setBoxMinus] = useState([])
 
-  const addBox = () => {
-    setBox( box + 1 )
+  const addBoxPlus = () => {
+    setBoxPlus([...boxPlus, <Box />]);
+  }
+
+  const deleteBoxMinus = () => {
+    setBoxMinus([boxMinus] - 1 )
+    console.log(boxMinus);
   }
 
   return (
     <>
       <h1><Header /></h1>
-      
-      <br />
 
-      <Box />
-      <button onClick={addBox} >add box</button>
+      <div className="button">
+        <button onClick={addBoxPlus} >add Box</button>
+        <button onClick={deleteBoxMinus} >delete Box</button>
+      </div>
+
+      <div className="container">
+        {boxPlus}
+      </div>
 
       <br />
       <LightBulb />

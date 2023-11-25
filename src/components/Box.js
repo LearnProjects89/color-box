@@ -14,9 +14,10 @@ const Box = () => {
     <>
       <div className="box" 
         onClick={() => changeColor(color)} 
-        style={{ backgroundColor: color, textAlign: "center", fontSize: 150 }}>
+        style={{ backgroundColor: color, fontSize: 150 }}>
         {count}
       </div>
+      <br />
     </>
   )
 }
