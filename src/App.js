@@ -9,11 +9,11 @@ const App = () => {
   const [boxPlus, setBoxPlus] = useState([])
   const [boxMinus, setBoxMinus] = useState([])
 
-  const addBoxPlus = () => {
+  const addBox = () => {
     setBoxPlus([...boxPlus, <Box />]);
   }
 
-  const deleteBoxMinus = () => {
+  const deleteBox = () => {
     setBoxMinus( boxPlus.pop() )
   }
 
@@ -22,8 +22,8 @@ const App = () => {
       <h1><Header /></h1>
 
       <div className="button">
-        <button onClick={addBoxPlus} >add Box</button>
-        <button onClick={deleteBoxMinus} >delete Box</button>
+        <button onClick={addBox} >add Box</button>
+        <button onClick={deleteBox} >delete Box</button>
       </div>
 
       <div className="container">
@@ -32,7 +32,7 @@ const App = () => {
 
       <br />
       <LightBulb />
-      <Footer />
+      <h5><Footer /></h5>
     </>
   )
 }
