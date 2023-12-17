@@ -5,8 +5,20 @@ const Box = () => {
     const [color, setColor] = useState("purple")
 
     const changeColor = () => {
-        const newColor = "rgb(" + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255)  + "," + Math.floor(Math.random()*255) + ")"
-        setColor(newColor)
+        // const newColor = "rgb(" + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255)  + "," + Math.floor(Math.random()*255) + ")"
+        const brightColors = [
+          "rgb(255, 0, 0)",
+          "rgb(255, 165, 0)",
+          "rgb(255, 255, 0)",
+          "rgb(0, 255, 0)",
+          "rgb(0, 255, 255)",
+          "rgb(0, 0, 255)",
+          "rgb(255, 0, 255)",
+          "rgb(255, 192, 203)",
+        ];
+        const randomBrightColor = brightColors[Math.floor(Math.random() * brightColors.length)];
+
+        setColor(randomBrightColor)
         setCount(count + 1)
     }
 
