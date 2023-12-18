@@ -18,7 +18,7 @@ const LightBulb = () => {
         <img 
           onClick={turnTheLight} 
           src={light} 
-          style={{ width: '59%' }} 
+          style={{ width: '50%' }} 
           alt="Light bulb" />
       </div>
 
