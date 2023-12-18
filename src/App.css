@@ -37,15 +37,11 @@ h2, h3 {
 }
 
 .lightBulb {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex: 0 0 calc(35% - 10px); 
-  /* box-sizing: border-box;  */
-  position: relative;
-  margin: 5px; 
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
   
 }
 
