@@ -4,15 +4,22 @@ import lightOff from '../assets/04.jpg'
 import lightOn from '../assets/05.jpg'
 
 const LightBulb = () => {
-  const [light, setLight] = useState([]);
-  // const [lightBulbOn, setLightBulbOn] = useState();
+  const [light, setLight] = useState(lightOff);
 
+  const turnTheLight = () => {
+    const newLight = light === lightOff ? lightOn : lightOff;
+    setLight(newLight);
+  };
  
   return (
     <>
 
       <div className="lightBulb">
-        <img src={lightOff} style={{ width: '59%' }} alt="Light bulb" />
+        <img 
+          onClick={turnTheLight} 
+          src={light} 
+          style={{ width: '59%' }} 
+          alt="Light bulb" />
       </div>
 
     </>
