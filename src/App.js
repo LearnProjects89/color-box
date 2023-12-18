@@ -15,6 +15,7 @@ const App = () => {
 
   const [dicePlus, setDicePlus] = useState([<Dice />])
   const [dicexMinus, setDiceMinus] = useState([])
+  const [count, setCount] = useState(0)
   
   const addBox = () => { setBoxPlus([...boxPlus, <Box />]) }
   const deleteBox = () => { setBoxMinus( boxPlus.pop() ) }
@@ -24,6 +25,9 @@ const App = () => {
 
   const addDice = () => { setDicePlus([...dicePlus, <Dice />]) }
   const deleteDice = () => { setDiceMinus( dicePlus.pop() ) }
+  const changeCount = () => {
+    setCount(count + 1)
+}
 
   return (
     <>
@@ -50,10 +54,16 @@ const App = () => {
       </div>
       <h2>=====================================</h2>
       <h2>ROLL teh Dice FIDGET:</h2>
+      
       <div className="button">
         <button onClick={addDice} >add Box</button>
         <button onClick={deleteDice} >delete Box</button>
       </div>
+
+      <div className="diceBox">
+        <h3>{count}</h3>
+      </div>
+
       <div className="container">
         {dicePlus}
       </div>

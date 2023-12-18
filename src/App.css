@@ -45,3 +45,25 @@ h2, h3, h4 {
   
 }
 
+.diceBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  border: 1px solid black;
+  height: 200px;
+  padding: 5px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+}
+
+.lastRoll {
+  text-align: center;
+}
+
+.lastRoll h3 {
+  display: block;
+  margin-bottom: -20px; /* Adjust spacing between elements */
+}
