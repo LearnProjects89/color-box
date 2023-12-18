@@ -24,7 +24,28 @@
 
 .button {
   display: flex;
-  justify-content: space-evenly;
-  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
   
 }
+
+h2, h3 {
+  text-align: center;
+  color: blueviolet;
+}
+
+.lightBulb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 calc(35% - 10px); 
+  /* box-sizing: border-box;  */
+  position: relative;
+  margin: 5px; 
+  
+}
+
