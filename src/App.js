@@ -42,7 +42,7 @@ const App = () => {
 
 
   return (
-    <>
+    <div className="app-background">
       <h1><Header /></h1>
         <h2>Games</h2>
 
@@ -125,7 +125,7 @@ const App = () => {
 
 <h2>=====================================</h2>
       <h5><Footer /></h5>
-    </>
+    </div>
   )
 }
 export default App
