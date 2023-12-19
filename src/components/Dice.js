@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect } from "react"
 import "../App.css"
 import one from '../assets/Dice01.jpg'
 import two from '../assets/Dice02.jpg'
@@ -7,7 +7,7 @@ import four from '../assets/Dice04.jpg'
 import five from '../assets/Dice05.jpg'
 import six from '../assets/Dice06.jpg'
 
-const Dice = () => {
+const Dice = ({ onRolledNumberChange }) => {
     
     const [diceRoll, setDiceRoll] = useState(null)
     const [rolledNumber, setRolledNumber] = useState(null);
@@ -16,11 +16,12 @@ const Dice = () => {
     const diceRollRoll = [one, two, three, four, five, six];
 
     const changeRoll = () => {
-        const randomeDiceRoll = Math.floor(Math.random()*diceRollRoll.length)
+        const randomDiceRoll = Math.floor(Math.random()*diceRollRoll.length)
 
-        setDiceRoll(diceRollRoll[randomeDiceRoll])
-        setRolledNumber(randomeDiceRoll + 1);
+        setDiceRoll(diceRollRoll[randomDiceRoll])
+        setRolledNumber(randomDiceRoll + 1);
         setCount(count + 1)
+        onRolledNumberChange(randomDiceRoll + 1);
     }
 
   return (
