@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# <span style="color: #9370DB;">Games for Relaxing</span> 
+### <font color="#9370DB">Here are some fidgeting games you can play at your desk</font>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This document provides an overview of three interactive games available in our application.
 
-## Available Scripts
+## <span style="color: #90EE90;">1. Box Fidget</span>
+![Dice Image](src/assets/MDbox.jpeg)
+### Description
+The Box Fidget game allows users to add and delete colorful boxes dynamically. Clicking on the "Add Box" button adds a new box, and the "Delete Box" button removes the last added box. Clicking on the box to see the randome color apear.
 
-In the project directory, you can run:
+### How to Play
+- Click the "Add Box" button to add a new colorful box to the container.
+- Click the "Delete Box" button to remove the last added box from the container.
+- Click on the Box and it will displlay a different color with number of times it was pressed
 
-### `yarn start`
+## <span style="color: #90EE90;">2. Turn the Light Fidget</span> 
+![Dice Image](src/assets/MDlightbulb.jpeg)
+### Description
+In the Turn the Light Fidget game, users can add and delete virtual light bulbs. It's a simple interaction to simulate turning lights on and off.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### How to Play
+- Click the "add" button to turn on a new light bulb.
+- Click the "delete" button to turn off the last turned-on light bulb.
+- Click on the light bulb to turn it on or off
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## <span style="color: #90EE90;">3. Roll the Dice Fidget</span> 
+![Dice Image](src/assets/MDdice.jpeg)
+### Description
+Roll the Dice Fidget offers a virtual dice rolling experience. Each added dice can be rolled, displaying a random number on the face of the dice.
 
-### `yarn test`
+### How to Play
+- Click the "add" button to add a new dice.
+- Click the dice image to roll it and get a random number.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy playing these interactive games!
