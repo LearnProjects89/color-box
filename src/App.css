@@ -1,3 +1,14 @@
+body, .app-background {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('./assets/backgroundImage.png'); 
+  /* background-size: cover; */
+  background-position: center left top;
+  background-size: 35% auto;
+  background-repeat: no-repeat;
+  background-color: #3498db;
+}
 .header {
   text-align: center;
   margin: 10px;
